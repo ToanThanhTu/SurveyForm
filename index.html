@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Football Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1 id="title">The Football Survey</h1>
+    <p id="description">Tell us something about your football taste!</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label">Enter your name: <input id="name" type="text" placeholder="John Doe" required /></label>
+        <label id="email-label">Enter your email: <input id="email" type="email" placeholder="john@gmail.com" required /></label>
+        <label id="age-label">Enter your age (years): <input id="age" type="number" min="3" max="120" placeholder="23" required /></label>
+        <label id="number-label">Enter your football experience in years: <input id="number" type="number" min="0" max="120" placeholder="15" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Which of the following football teams do you like the most?</legend>
+        <label for="barca"><input class="inline" id="barca" type="radio" name="team" value="barca" checked />Barcelona</label>
+        <label for="real"><input class="inline" id="real" type="radio" name="team" value="real" />Real Madrid</label>
+        <label for="manc"><input class="inline" id="manc" type="radio" name="team" value="manc" />Manchester City</label>
+        <label for="liv"><input class="inline" id="liv" type="radio" name="team" value="liv" />Liverpool</label>
+        <label for="bayern"><input class="inline" id="bayern" type="radio" name="team" value="bayern" />Bayern Munich</label>
+        <label for="inter"><input class="inline" id="inter" type="radio" name="team" value="inter" />Inter Milan</label>
+        <label for="ac"><input class="inline" id="ac" type="radio" name="team" value="ac" />AC Milan</label>
+        <label for="psg"><input class="inline" id="psg" type="radio" name="team" value="psg" />Paris Saint-German</label>
+        <label>Why do you like the selected team?
+          <textarea id="team" name="team" rows="5" cols="40" placeholder="I like... because..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Which of the following football leagues do you like the most?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">EPL</option>
+            <option value="2">La Liga</option>
+            <option value="3">Ligue 1</option>
+            <option value="4">Bundesliga</option>
+            <option value="5">Serie A</option>
+          </select>
+        </label>
+        <label>Why do you like the selected league?
+          <textarea id="league" name="league" rows="5" cols="40" placeholder="I like... because..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="details"><input class="inline" id="details" type="checkbox" value="details" required /> I agree to share my details</label>
+        <label for="terms"><input class="inline" id="terms" type="checkbox" value="terms" required /> I agree to <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" name="submit" />
+    </form>
+    <footer></footer>
+  </body>
+</html>
