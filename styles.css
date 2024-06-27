@@ -1,59 +1,72 @@
+html, body {
+  height: 100%;
+}
+
+/* Style for the body element */
 body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
+  width: 100%; /* Full width of the viewport */
+  margin: 0; /* Remove default margin */
   font-family: Courier New, Sans-serif;
-  font-size: 16px;
+  font-size: 16px; /* Set base font size */
   background-color: rgba(0, 30, 0, 0.8);
   color: #ffffff;
 }
 
+/* Style for h1 and p elements */
 h1, p {
-  margin: 1em auto;
+  margin: 1em auto; /* Centered margin */
   text-align: center;
 }
 
+/* Style for the form element */
 form {
-  width: 90vw;
+  width: 90vw; /* 90% of the viewport width */
   max-width: 650px;
   min-width: 300px;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the form horizontally */
 }
 
+/* Style for fieldset elements */
 fieldset {
-  border: none;
+  border: none; /* Remove default border */
   padding: 2rem 0;
   border-bottom: 3px solid rgb(0, 30, 0);
 }
 
+/* Remove bottom border for the last fieldset */
 fieldset:last-of-type {
   border-bottom: none;
 }
 
+/* Style for label elements */
 label {
-  display: block;
-  margin: 0.5rem 0;
+  display: block; /* Block-level display */
+  margin: 0.5rem 0; /* Vertical margin */
 }
 
+/* Style for input, textarea, and select elements */
 input, textarea, select {
   margin: 10px 0 0 0;
-  width: 100%;
+  width: 100%; /* Full width */
   min-height: 2.5em;
 }
 
+/* Style for input and textarea elements */
 input, textarea {
   background-color: rgb(0, 20, 0);
   color: white;
   border: 1px solid rgb(0, 20, 0);
 }
 
+/* Style for elements with the class 'inline' */
 .inline {
-  display: inline;
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
+  display: inline; /* Inline display */
+  width: unset; /* Reset width */
+  margin: 0 0.5em 0 0; /* Right margin */
+  vertical-align: middle; /* Align with middle of the text */
 }
 
+/* Style for submit button */
 input[type="submit"] {
   display: block;
   width: 70%;
@@ -65,10 +78,12 @@ input[type="submit"] {
   min-width: 300px;
 }
 
+/* Style for anchor elements */
 a {
   color: #afafe2
 }
 
+/* Style for legend elements */
 legend {
   padding-top: 2em;
   margin-bottom: -2em;
