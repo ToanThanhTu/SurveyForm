@@ -88,3 +88,13 @@ legend {
   padding-top: 2em;
   margin-bottom: -2em;
 }
+
+/* Footer styling */
+footer {
+  bottom: 0;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 0.5;
+}
